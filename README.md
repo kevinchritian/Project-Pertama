@@ -2,7 +2,8 @@
 
 ## Domain Proyek
 
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
+![Toco](https://github.com/kevinchritian/Project-Pertama/assets/93351620/45a0b40a-002f-44bf-9bac-4f76c338e940)
+
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
