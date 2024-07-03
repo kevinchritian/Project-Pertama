@@ -64,6 +64,7 @@ Variable Target:
 
 ### Evaluasi Data
 **Informasi Pada Data**
+
 Mengecek informasi pada dataset dengan fungsi info() berikut :
 ![Screenshot (566)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/91a55fc3-b119-4a6b-b5f7-346241ce3d6d)
 
