@@ -66,6 +66,7 @@ Variable Target:
 **Informasi Pada Data**
 Mengecek informasi pada dataset dengan fungsi info() berikut :
 ![Screenshot (566)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/91a55fc3-b119-4a6b-b5f7-346241ce3d6d)
+
 Dari hasil informasi dapat disimpulkan :
 - Terdapat 4 data bertipe Int (Previous Scores, Sleep Hours, Sample Question Papers Practiced)
 - Terdapat 1 data bertipe Float (Performance Index)
