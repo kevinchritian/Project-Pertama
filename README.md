@@ -73,7 +73,7 @@ Dari hasil informasi dapat disimpulkan :
 - Terdapat 1 data bertipe Float (Performance Index)
 - Terdapat 1 data bertipe Object (Extracurricular Activities)
 
-**deskripsi statistik data**
+**Deskripsi Statistik Data**
 
 Melihat deskripsi pada dataset dengan Fungsi describe(), sebgai berikut hasilnya :
 ![Screenshot (567)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/c75ce43c-a79c-4edf-bf80-edb422dfc94b)
@@ -88,15 +88,18 @@ Fungsi describe() diatas memberikan informasi statistik pada masing-masing kolom
 - 75% adalah kuartil ketiga.
 - Max adalah nilai maksimum.
 
+
 **Menangani Duplikat Data**
 
 Pada bagian ini, melihat apakah ada data data yang terduplikat atau tidak. Fungsi melihat data terduplikat atau tidak dengan .duplicate(). Sedangkan unutk mengetahui jumlah yang terdupikat adalah .duplicate().sum().
+
 ![Screenshot (568)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/c541e1ea-1683-45ea-b0c4-f6af2fb53bb1)
 
 Ternyata ada data yang terduplikat sebanyak 127. Data yang terduplikat bisa mempengaruhi kinerja model. Data duplikat juga dapat menambah ukuran dataset tanpa menambah informasi baru, yang dapat memperlambat proses pelatihan model dan memperbesar beban komputasi. Sehingga menghapus data duplikat dapat membantu memastikan bahwa data yang digunakan untuk pelatihan model adalah unik dan representatif. Untuk menghapus data duplikat bisa menggunakan drop_duplicates().
 ![Screenshot (569)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/0ee53efe-428d-40e8-9c6f-5def70093148)
 
 Data Terduplikat sudah tidak ada lagi.
+
 
 **Melihat apakah ada data yang Null atau tidak**
 
