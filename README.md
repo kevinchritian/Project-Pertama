@@ -53,14 +53,14 @@ Berikut informasi pada dataset :
 
 ### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
 Variable Features:
-- Jam Belajar: Jumlah total jam yang dihabiskan setiap siswa untuk belajar.
-- Skor Sebelumnya: Skor yang diperoleh siswa pada tes sebelumnya.
-- Kegiatan Ekstrakurikuler: Apakah siswa berpartisipasi dalam kegiatan ekstrakurikuler (Ya atau Tidak).
-- Jam Tidur: Jumlah rata-rata jam tidur yang dimiliki siswa per hari.
-- Contoh Soal yang Dilatih: Jumlah contoh soal yang dipraktikkan siswa.
+- Hours Studied: Jumlah total jam yang dihabiskan setiap siswa untuk belajar.
+- Previous Scores: Skor yang diperoleh siswa pada tes sebelumnya.
+- Extracurricular Activities: Apakah siswa berpartisipasi dalam kegiatan ekstrakurikuler (Ya atau Tidak).
+- Sleep Hours: Jumlah rata-rata jam tidur yang dimiliki siswa per hari.
+- Sample Question Papers Practiced: Jumlah contoh soal yang dipraktikkan siswa.
   
 Variable Target:
-- Indeks Kinerja: Ukuran kinerja keseluruhan setiap siswa. Indeks kinerja mewakili kinerja akademik siswa dan telah dibulatkan ke bilangan bulat terdekat. Indeksnya berkisar antara 10 hingga 100, dengan nilai yang lebih tinggi menunjukkan kinerja yang lebih baik.
+- Performance Index: Ukuran kinerja keseluruhan setiap siswa. Indeks kinerja mewakili kinerja akademik siswa dan telah dibulatkan ke bilangan bulat terdekat. Indeksnya berkisar antara 10 hingga 100, dengan nilai yang lebih tinggi menunjukkan kinerja yang lebih baik.
 
 ### Evaluasi Data
 **Informasi Pada Data**
