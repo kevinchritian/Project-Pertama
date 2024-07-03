@@ -37,11 +37,6 @@ Latar Belakang Masalah :
 - Menyiapkan data agar dapat digunakan secara efektif oleh model prediksi. Termasuk pembersihan, transformasi, dan pemilihan fitur, sehingga model machine learning dapat dilatih dengan efisien dan memberikan hasil yang akurat.
 - Membuat model machine learning yang dapat memprediksi nilai kinerja akademik siswa dengan akurat
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
-
     ### Solution statements
     - Solusi nya yaitu menggunakan tiga Algoritma untuk membandingkan kinerja model mana yang lebih baik untuk memprediksi nilai kinerja akademik siswa. 3 Algoritma tersebut yaitu KNN, Random Forest, dan Boosting
     - Menerapkan Feature Scaing yang bertujuan memastikan bahwa semua fitur memiliki skala yang seragam, yang penting untuk algoritma seperti KNN yang sensitif terhadap skala fitur.
