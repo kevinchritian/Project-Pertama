@@ -156,28 +156,62 @@ Dapat dilihat bahwa dari Corelation Matrix diatas Feature Previous score terhada
 
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.  
+- One Hot Encoding
+One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah Extracurricular Activities.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+- Train Test Split
+Train test split aja proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Pada proyek ini dataset dibagi menjadi 80% train dan 20% test. Sehingga total train dataset 7898 dan total test dataset: 1975
+
+- Normalization
+Algoritma machine learning akan memiliki performa lebih baik dan bekerja lebih cepat jika dimodelkan dengan data seragam yang memiliki skala relatif sama. Salah satu teknik normalisasi yang digunakan pada proyek ini adalah Standarisasi dengan sklearn.preprocessing.StandardScaler. 
 
 ## Modeling
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+Modeling yang digunakan ada 3 yaitu KNN, Random Forest, dan Boosting
+**KNN**
+Knn adalah algoritma yang cukup sederhana dibandingkan algoritma lain. KNN dapat digunakan untuk tugas klasifikasi. KNN bekerja dengan membandingkan jarak antara satu sample data dengan sample data train  lain dengan cara memilih sejumlah k tentangga terdekat. Pemilihan nilai K sangat penting dan berpengaruh terhadap perfoma model. Jika k terlalu rendah  maka akan menghasilkan model overfit dan hasil prediksinya memiliki varians tinggi. Jika K terlalu tinggi model menjadi underfit atau bias. 
+Pada model KNN ini menggunakan Sklearn dengan Metrik ukuran jarak yang digunakan adalah Minkowski distance. Kemudain pada modeling KNN ini, menggunakan :
+- nilai k=10
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+**Random Forest**
+Random Forest adalah salah satu algorimta supervised learning. Random forest dapat digunakan unutk menyelesaikan masalah klasifikasi dan regresi. Random Forest pada dasarnya adalah versi bagging dari algoritma decison tree. Jadi algoritma Random Forest disusun dari banyak Decision Tree  yang pembagian data dan fiturnya dipilih secara acak.
+Model parameter random forest :
+-	n_estimator: n_estimator=50.
+-	max_depth: 16
+-	random_state: 55
+-	n_jobs: -1
+
+**Boosting**
+Algoritma Boosting membangun model dari data latih. Kemudian membuat model yang bertugas memperbaiki kesalahan dari model pertama. Model ditambahkan sampai data latih terprediksi dengan baik atau mencapai jumlah maksimum model untuk ditambahkan. Pada model Boosting menggunakan Adaptive Boosting.
+Adaptive Boosting bekerja dengan semua kasus dalam data latih memiliki bobot yang sama. Pada setiap tahapan, model akan observasi yang dilakukan sudah benar atau belum. Bobot yang lebih tinggi kemudian diberikan pada model yang salah, sehingga mereka akan dimasukan ke dalam tahapan selnjutnya. Proses ini berlanjut sampai model akurasi yang diinginkan.
+Model Parameter :
+- learning_rate: 0.05
+- random_state: 55
+
+**Kelebihan dan Kelemahan**
+- KNN (K-Nearest Neighbors)
+Kelebihan: Sederhana dan mudah dipahami. Tidak memerlukan asumsi khusus tentang distribusi data atau parameter model, sehingga bisa digunakan dalam berbagai masalah klasifikasi dan regresi.
+Kekurangan: Lambat dalam prediksi pada dataset besar 
+
+- Random Forest
+Kelebihan: Mengurangi overfitting dibandingkan dengan model pohon keputusan tunggal dengan membangun banyak pohon keputusan dan menggabungkan hasilnya. 
+Kekurangan: Model dapat menjadi sangat besar dan memerlukan banyak memori serta waktu komputasi, terutama dengan banyak pohon dan fitur.
+
+- Boosting
+Kelebihan: Dapat memperbaiki kesalahan model sebelumnya secara iteratif.
+Kekurangan: Bisa rentan terhadap overfitting jika tidak diatur dengan benar, dan proses pelatihan bisa memakan waktu lama karena model dilatih secara berurutan.
 
 ## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+Metrik evaluasi yang digunakan pada proyek ini adalah akurasi dan mean squared error (MSE). Akurasi menentukan tingkat kemiripan antara hasil prediksi dengan nilai / data yang sebenarnya. Mean squared error (MSE) mengukur error dalam model statistik dengan cara menghitung rata-rata error dari kuadrat hasil aktual dikurang hasil prediksi. 
+Berikut adalah rumus MSE :
+![Screenshot (587)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/1be82688-9581-4a4e-bde5-5f30ce01a1cb)
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+Berikut adalah hasil MSE dari 3 model (KNN, Random Forest, Boosting):
+![Screenshot (584)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/48d2755b-6443-4ac8-82b5-8de850356bfd)
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+Berikut dalam bentuk plot:
+![Screenshot (585)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/7d562d17-fe4a-4163-8db1-4caccec66d7f)
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+Dari hasil Plot diatas dapat dilihat bahwa MSE pada train model Random Forest lebih kecil daripada yang lain. Sedangkan pada MSE test Model KNN lebih kecil dari pada yang lain. Berikut adalah pengujian model :
+![Screenshot (586)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/bd2c9611-4337-4815-b009-0bd3e7c89cf3)
+
+Dari hasil prediksi tersebut yang paling mendekati adalah Random Forest dan KNN. tetapi yang paling mendekati adalah **Random Forest**. 
