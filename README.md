@@ -19,23 +19,23 @@ Dengan memahami faktor-faktor kinerja akademik siswa, Universitas atau sekolah d
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
+Project ini ditujukan kepada lembaga pendidikan dengan karakteristik sebagai berikut:
++ Lembaga menyediakan dukungan Akademik dengan memberi bimbingan dan konseling untuk membantu siswa mencapai potensi maksimal
++ Lembaga dapat menggunakan Analisis data untuk menganalisis data kinerja siswa untuk meningkatkan strategi pengajaran
++ Lembaga Pendidikan dapat menyediakan Program Pendidikan seperti menawarkan berbagai tingkat pendidikan dan pelatihan kepada siswa
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+Latar Belakang Masalah :
+- Dari segi serangkaian Features, Feature apa yang paling berpengaruh pada hasil kinerja Akademik siswa ?
+- Bagaimana cara memproses data agar dapat digunakan secara efektif dalam model prediksi ?
+- Berapa nilai kinerja akademik siswa yang diprediksi berdasarkan fitur-fitur tertentu ?
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- Mengidentifikasi fitur yang paling berpengaruh pada hasil kinerja akademik siswa.
+- Menyiapkan data agar dapat digunakan secara efektif oleh model prediksi. Termasuk pembersihan, transformasi, dan pemilihan fitur, sehingga model machine learning dapat dilatih dengan efisien dan memberikan hasil yang akurat.
+- Membuat model machine learning yang dapat memprediksi nilai kinerja akademik siswa dengan akurat
 
 Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
 
@@ -43,8 +43,9 @@ Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pe
 - Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
 
     ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+    - Solusi nya yaitu menggunakan tiga Algoritma untuk membandingkan kinerja model mana yang lebih baik untuk memprediksi nilai kinerja akademik siswa. 3 Algoritma tersebut yaitu KNN, Random Forest, dan Boosting
+    - Menerapkan Feature Scaing yang bertujuan memastikan bahwa semua fitur memiliki skala yang seragam, yang penting untuk algoritma seperti KNN yang sensitif terhadap skala fitur.
+    - Untuk evaluasi menggunakan MSE, dan memilih MSE terendah sebagai model yang terbaik. Selain itu Evaluasi efek dari feature scaling pada MSE untuk memastikan bahwa penerapan scaling meningkatkan performa model dibandingkan dengan model yang tidak menggunakan scaling.
 
 ## Data Understanding
 Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
