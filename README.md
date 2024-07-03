@@ -43,17 +43,47 @@ Latar Belakang Masalah :
     - Untuk evaluasi menggunakan MSE, dan memilih MSE terendah sebagai model yang terbaik. Selain itu Evaluasi efek dari feature scaling pada MSE untuk memastikan bahwa penerapan scaling meningkatkan performa model dibandingkan dengan model yang tidak menggunakan scaling.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Dataset yang digunakan adalah Student Performance, berasal dari Kaggle, sumber data dataset: [Student Performance (Multiple Linear Regression)]([https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression)).
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Berikut informasi pada dataset :
+- Dataset memiliki format CSV (Comma-Seperated Values).
+- Dataset memiliki 10000 sample dengan fitur.
+- Dataset memiliki 6 fitur.
+- Tidak ada missing value dalam dataset.
 
 ### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+Variable Features:
+- Jam Belajar: Jumlah total jam yang dihabiskan setiap siswa untuk belajar.
+- Skor Sebelumnya: Skor yang diperoleh siswa pada tes sebelumnya.
+- Kegiatan Ekstrakurikuler: Apakah siswa berpartisipasi dalam kegiatan ekstrakurikuler (Ya atau Tidak).
+- Jam Tidur: Jumlah rata-rata jam tidur yang dimiliki siswa per hari.
+- Contoh Soal yang Dilatih: Jumlah contoh soal yang dipraktikkan siswa.
+  
+Variable Target:
+- Indeks Kinerja: Ukuran kinerja keseluruhan setiap siswa. Indeks kinerja mewakili kinerja akademik siswa dan telah dibulatkan ke bilangan bulat terdekat. Indeksnya berkisar antara 10 hingga 100, dengan nilai yang lebih tinggi menunjukkan kinerja yang lebih baik.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+### Evaluasi Data:
+**Informasi Pada Data**
+Mengecek informasi pada dataset dengan fungsi info() berikut :
+![Screenshot (566)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/91a55fc3-b119-4a6b-b5f7-346241ce3d6d)
+Dari hasil informasi dapat disimpulkan :
+- Terdapat 4 data bertipe Int (Previous Scores, Sleep Hours, Sample Question Papers Practiced)
+- Terdapat 1 data bertipe Float (Performance Index)
+- Terdapat 1 data bertipe Object (Extracurricular Activities)
+
+**deskripsi statistik data**
+Melihat deskripsi pada dataset dengan Fungsi describe(), sebgai berikut hasilnya :
+![Screenshot (567)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/c75ce43c-a79c-4edf-bf80-edb422dfc94b)
+Fungsi describe() diatas memberikan informasi statistik pada masing-masing kolom feature :
+- Count  adalah jumlah sampel pada data.
+- Mean adalah nilai rata-rata.
+- Std adalah standar deviasi.
+- Min yaitu nilai minimum setiap kolom.
+- 25% adalah kuartil pertama. Kuartil adalah nilai yang menandai batas interval dalam empat bagian sebaran yang sama.
+- 50% adalah kuartil kedua, atau biasa juga disebut median (nilai tengah).
+- 75% adalah kuartil ketiga.
+- Max adalah nilai maksimum.
+
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
@@ -81,10 +111,3 @@ Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, probl
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
 - Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
-
