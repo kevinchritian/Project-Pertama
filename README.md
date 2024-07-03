@@ -1,15 +1,21 @@
-# Laporan Proyek Machine Learning - Nama Anda
+# Laporan Proyek Machine Learning - Kevin Christian Sepoetro
 
 ## Domain Proyek
 
-![Toco](https://github.com/kevinchritian/Project-Pertama/assets/93351620/45a0b40a-002f-44bf-9bac-4f76c338e940)
+Kinerja akademik siswa adalah aspek penting dalam pendidikan yang mempengaruhi peluang mereka di masa depan. Faktor-faktor yang mempengaruhi seperti jumlah jam belajar, skor ujian sebelumnya, kegiatan ekstrakurikuler, dan lain lain. Namun, memprediksi kinerja akademik secara akurat bisa sulit dilakukan secara manual. Oleh karena itu, diperlukan sistem yang bisa menganalisis data siswa untuk memprediksi kinerja siswa dengan lebih tepat.
 
+**Mengapa Masalah ini harus diselesaikan ?**
+Masalah ini harus diselesaikan karena :
+- Peningkatan Kualitas Pendidikan.
+Memahami faktor-faktor yang mempengaruhi kinerja akademik siswa dapat membantu pendidik dan lembaga pendidikan merancang kurikulum dan metode pengajaran yang lebih efektif, Sehingga dapat meningkatkan kualitas pendidikan.
+- Identifikasi Dini Siswa Bermasalah
+Melalui analisis data, dapat mengidentifikasi siswa yang mungkin menghadapi kesulitan dalam akademik sejak dini. Hal ini memungkinkan memberi dukungan lebih cepat, yang dapat membantu siswa mengatasi hambatan belajar dan mencapai potensi maksimal siswa.
+- Optimalisasi penggunaan sumber daya lembaga pendidikan.
+Karena hal ini dapat membantu sekolah (guru) dan lembaga pendidikan dalam mengalokasikan sumber daya dengan lebih efisien. Misalnya, program bimbingan atau dukungan tambahan dapat ditargetkan kepada siswa yang paling membutuhkan berdasarkan data yang ada.
+- Optimalisasi Prestasi Siswa dan Kinerja Universitas
+Dengan memahami faktor-faktor kinerja akademik siswa, Universitas atau sekolah dapat mengidentifikasi tren atau pola yang mempengaruhi kinerja siswa. Sehingga memungkinkan sekolah untuk mengembangkan strategi yang lebih efektif dalam proses seleksi, pengajaran, dan dukungan akademik, sehingga dapat meningkatkan prestasi siswa dan keseluruhan kinerja sekolah maupun universitas.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
-  
-  Format Referensi: [Judul Referensi](https://scholar.google.com/) 
+  Format Referensi: [Judul Referensi](https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/1571/568) 
 
 ## Business Understanding
 
