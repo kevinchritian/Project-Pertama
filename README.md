@@ -110,6 +110,16 @@ Tidak ada data yang Null pada setiap kolom atau feature. Selenjutnya melihat inf
 
 Dari hasil informasi statistik, terdapat perubahan setelah dilakukan penghapusan Duplikat data. Seperti jumlah data menjadi 9873, perubahan rata rata, dan Standart devasi.
 
+### Outlier
+![Screenshot (572)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/f0c6710d-3fd7-4d0b-ac21-891ca428711c)
+![Screenshot (573)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/8335a588-ac49-4f1e-8bee-cc8f4d1b76b9)
+![Screenshot (574)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/7d545513-2f95-432b-8605-1958a30ff1ce)
+![Screenshot (575)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/9f0d2d8c-64cc-4673-ba90-ab10467735eb)
+
+Untuk masalah outlier dapat dilihat, bahwa tidak ada sampel yang nilainya sangat jauh dari cakupan umum data utama.
+
+### Univariate
+
 
 
 ## Data Preparation
