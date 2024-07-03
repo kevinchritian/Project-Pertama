@@ -167,12 +167,15 @@ Algoritma machine learning akan memiliki performa lebih baik dan bekerja lebih c
 
 ## Modeling
 Modeling yang digunakan ada 3 yaitu KNN, Random Forest, dan Boosting
+
 **KNN**
+
 Knn adalah algoritma yang cukup sederhana dibandingkan algoritma lain. KNN dapat digunakan untuk tugas klasifikasi. KNN bekerja dengan membandingkan jarak antara satu sample data dengan sample data train  lain dengan cara memilih sejumlah k tentangga terdekat. Pemilihan nilai K sangat penting dan berpengaruh terhadap perfoma model. Jika k terlalu rendah  maka akan menghasilkan model overfit dan hasil prediksinya memiliki varians tinggi. Jika K terlalu tinggi model menjadi underfit atau bias. 
 Pada model KNN ini menggunakan Sklearn dengan Metrik ukuran jarak yang digunakan adalah Minkowski distance. Kemudain pada modeling KNN ini, menggunakan :
 - nilai k=10
 
 **Random Forest**
+
 Random Forest adalah salah satu algorimta supervised learning. Random forest dapat digunakan unutk menyelesaikan masalah klasifikasi dan regresi. Random Forest pada dasarnya adalah versi bagging dari algoritma decison tree. Jadi algoritma Random Forest disusun dari banyak Decision Tree  yang pembagian data dan fiturnya dipilih secara acak.
 Model parameter random forest :
 -	n_estimator: n_estimator=50.
@@ -181,6 +184,7 @@ Model parameter random forest :
 -	n_jobs: -1
 
 **Boosting**
+
 Algoritma Boosting membangun model dari data latih. Kemudian membuat model yang bertugas memperbaiki kesalahan dari model pertama. Model ditambahkan sampai data latih terprediksi dengan baik atau mencapai jumlah maksimum model untuk ditambahkan. Pada model Boosting menggunakan Adaptive Boosting.
 Adaptive Boosting bekerja dengan semua kasus dalam data latih memiliki bobot yang sama. Pada setiap tahapan, model akan observasi yang dilakukan sudah benar atau belum. Bobot yang lebih tinggi kemudian diberikan pada model yang salah, sehingga mereka akan dimasukan ke dalam tahapan selnjutnya. Proses ini berlanjut sampai model akurasi yang diinginkan.
 Model Parameter :
@@ -188,6 +192,7 @@ Model Parameter :
 - random_state: 55
 
 **Kelebihan dan Kelemahan**
+
 KNN (K-Nearest Neighbors)
 - Kelebihan: Sederhana dan mudah dipahami. Tidak memerlukan asumsi khusus tentang distribusi data atau parameter model, sehingga bisa digunakan dalam berbagai masalah klasifikasi dan regresi.
 - Kekurangan: Lambat dalam prediksi pada dataset besar 
