@@ -15,7 +15,7 @@ Karena hal ini dapat membantu sekolah (guru) dan lembaga pendidikan dalam mengal
 - Optimalisasi Prestasi Siswa dan Kinerja Universitas
 Dengan memahami faktor-faktor kinerja akademik siswa, Universitas atau sekolah dapat mengidentifikasi tren atau pola yang mempengaruhi kinerja siswa. Sehingga memungkinkan sekolah untuk mengembangkan strategi yang lebih efektif dalam proses seleksi, pengajaran, dan dukungan akademik, sehingga dapat meningkatkan prestasi siswa dan keseluruhan kinerja sekolah maupun universitas.
 
-  Format Referensi: [Judul Referensi](https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/1571/568) 
+  Format Referensi: [Implementasi Algoritma K-Means untuk Klasterisasi Kinerja Akademik Mahasiswa](https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/1571/568) 
 
 ## Business Understanding
 
