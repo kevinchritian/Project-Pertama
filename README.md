@@ -120,6 +120,7 @@ Untuk masalah outlier dapat dilihat, bahwa tidak ada sampel yang nilainya sangat
 
 ### Univariate
 Univariate melakukan analisis data dengan 1 feature saja. Untuk feature dibagi menjadi 2 yaitu Numeric (Hours Studied, Previous Scores, Sleep Hours, Sample Question Papers Practiced, Performance Index) dan kategori yaitu Extracurricular Activities.
+
 **Feature Kategori**
 
 ![Screenshot (576)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/396ec5d6-fdcf-4470-9913-46dc5de10536)
@@ -127,12 +128,14 @@ Univariate melakukan analisis data dengan 1 feature saja. Untuk feature dibagi m
 Dapat dilihat bahwa antara siswa ikut ectracurricular atau tidak berbeda tipis. Dimana jumlah yang ikut 4887 dan tidak ikut 4986.
 
 **Feature Numeric**
+
 Selanjutnya, untuk fitur numerik, kita akan melihat histogram masing-masing fiturnya
 
 ![Screenshot (577)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/4fd56320-a040-4e32-9ebb-b3ca5becdffe)
 
 ### Multivariate
 Multivariate adalah analisis data dengan melibatkan beberapa feature.
+
 **Feature Kategori**
 
 ![Screenshot (578)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/13fdaee1-f0d5-45b7-9e9e-d05c65295eb4)
@@ -147,7 +150,7 @@ Dapat dilihat bahwa dari grafik diatas bahwa Previous score memiliki kolerasi ya
 
 ![Screenshot (580)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/00325f7e-2206-4665-94c9-5b907c478b80)
 
-Dapat dilihat bahwa dari Corelation Matrix Feature Previous score terhadap Perfoma Index memiliki kolerasi tinggi yaitu(0.92). Sedangkan pada feature Sleep hours serta Sample Question Papers Practiced terhadap Perfomance Index sangat. (0.05 (Sleep Hours) dan 0.04(Sample Question Papers Practice)). Sehingga  feature Sleep hours dan Sample Question Papers Practiced di hapus.
+Dapat dilihat bahwa dari Corelation Matrix diatas Feature Previous score terhadap Perfoma Index memiliki kolerasi tinggi yaitu(0.92). Sedangkan pada feature Sleep hours serta Sample Question Papers Practiced terhadap Perfomance Index sangat. (0.05 (Sleep Hours) dan 0.04(Sample Question Papers Practice)). Sehingga  feature Sleep hours dan Sample Question Papers Practiced di hapus. Hasilnya sebagai berikut :
 
 ![Screenshot (581)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/d1cc8f98-c511-4b95-b26d-e6f6ab7d771d)
 
