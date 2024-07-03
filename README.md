@@ -188,30 +188,34 @@ Model Parameter :
 - random_state: 55
 
 **Kelebihan dan Kelemahan**
-- KNN (K-Nearest Neighbors)
-Kelebihan: Sederhana dan mudah dipahami. Tidak memerlukan asumsi khusus tentang distribusi data atau parameter model, sehingga bisa digunakan dalam berbagai masalah klasifikasi dan regresi.
-Kekurangan: Lambat dalam prediksi pada dataset besar 
+KNN (K-Nearest Neighbors)
+- Kelebihan: Sederhana dan mudah dipahami. Tidak memerlukan asumsi khusus tentang distribusi data atau parameter model, sehingga bisa digunakan dalam berbagai masalah klasifikasi dan regresi.
+- Kekurangan: Lambat dalam prediksi pada dataset besar 
 
-- Random Forest
-Kelebihan: Mengurangi overfitting dibandingkan dengan model pohon keputusan tunggal dengan membangun banyak pohon keputusan dan menggabungkan hasilnya. 
-Kekurangan: Model dapat menjadi sangat besar dan memerlukan banyak memori serta waktu komputasi, terutama dengan banyak pohon dan fitur.
+Random Forest
+- Kelebihan: Mengurangi overfitting dibandingkan dengan model pohon keputusan tunggal dengan membangun banyak pohon keputusan dan menggabungkan hasilnya.
+- Kekurangan: Model dapat menjadi sangat besar dan memerlukan banyak memori serta waktu komputasi, terutama dengan banyak pohon dan fitur.
 
-- Boosting
-Kelebihan: Dapat memperbaiki kesalahan model sebelumnya secara iteratif.
-Kekurangan: Bisa rentan terhadap overfitting jika tidak diatur dengan benar, dan proses pelatihan bisa memakan waktu lama karena model dilatih secara berurutan.
+Boosting
+- Kelebihan: Dapat memperbaiki kesalahan model sebelumnya secara iteratif.
+- Kekurangan: Bisa rentan terhadap overfitting jika tidak diatur dengan benar, dan proses pelatihan bisa memakan waktu lama karena model dilatih secara berurutan.
 
 ## Evaluation
 Metrik evaluasi yang digunakan pada proyek ini adalah akurasi dan mean squared error (MSE). Akurasi menentukan tingkat kemiripan antara hasil prediksi dengan nilai / data yang sebenarnya. Mean squared error (MSE) mengukur error dalam model statistik dengan cara menghitung rata-rata error dari kuadrat hasil aktual dikurang hasil prediksi. 
 Berikut adalah rumus MSE :
+
 ![Screenshot (587)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/1be82688-9581-4a4e-bde5-5f30ce01a1cb)
 
 Berikut adalah hasil MSE dari 3 model (KNN, Random Forest, Boosting):
+
 ![Screenshot (584)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/48d2755b-6443-4ac8-82b5-8de850356bfd)
 
 Berikut dalam bentuk plot:
+
 ![Screenshot (585)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/7d562d17-fe4a-4163-8db1-4caccec66d7f)
 
 Dari hasil Plot diatas dapat dilihat bahwa MSE pada train model Random Forest lebih kecil daripada yang lain. Sedangkan pada MSE test Model KNN lebih kecil dari pada yang lain. Berikut adalah pengujian model :
+
 ![Screenshot (586)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/bd2c9611-4337-4815-b009-0bd3e7c89cf3)
 
 Dari hasil prediksi tersebut yang paling mendekati adalah Random Forest dan KNN. tetapi yang paling mendekati adalah **Random Forest**. 
