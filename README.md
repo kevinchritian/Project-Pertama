@@ -62,7 +62,7 @@ Variable Features:
 Variable Target:
 - Indeks Kinerja: Ukuran kinerja keseluruhan setiap siswa. Indeks kinerja mewakili kinerja akademik siswa dan telah dibulatkan ke bilangan bulat terdekat. Indeksnya berkisar antara 10 hingga 100, dengan nilai yang lebih tinggi menunjukkan kinerja yang lebih baik.
 
-### Evaluasi Data:
+### Evaluasi Data
 **Informasi Pada Data**
 Mengecek informasi pada dataset dengan fungsi info() berikut :
 ![Screenshot (566)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/91a55fc3-b119-4a6b-b5f7-346241ce3d6d)
@@ -74,6 +74,7 @@ Dari hasil informasi dapat disimpulkan :
 **deskripsi statistik data**
 Melihat deskripsi pada dataset dengan Fungsi describe(), sebgai berikut hasilnya :
 ![Screenshot (567)](https://github.com/kevinchritian/Project-Pertama/assets/93351620/c75ce43c-a79c-4edf-bf80-edb422dfc94b)
+
 Fungsi describe() diatas memberikan informasi statistik pada masing-masing kolom feature :
 - Count  adalah jumlah sampel pada data.
 - Mean adalah nilai rata-rata.
